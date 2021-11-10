@@ -21,10 +21,10 @@ import heapq
 def cookies(k, A, z=0):
     heapq.heapify(A)
     while True:
-        if(len(A)==1): return -1
         a = heapq.heappop(A)
-        b = heapq.heappop(A)
         if(a>=k): return z
+        if(len(A)==0): return -1
+        b = heapq.heappop(A)
         heapq.heappush(A,(a+2*b))
         z+=1
 
