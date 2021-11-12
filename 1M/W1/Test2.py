@@ -17,11 +17,11 @@ import sys
 # The function accepts 2D_INTEGER_ARRAY matrix as parameter.
 #
 
-def flippingMatrix(matrix, ans=0):
-    n = len(matrix)
+def flippingMatrix(m, ans=0):
+    n = len(m)
     for z in range(n//2):
         for y in range(n//2):
-            ans += max(matrix[z][y], matrix[z][n-y-1], matrix[n-z-1][y], matrix[n-z-1][n-y-1])
+            ans += max(m[z][y], m[z][n-y-1], m[n-z-1][y], m[n-z-1][n-y-1])
     return ans
 
 if __name__ == '__main__':
