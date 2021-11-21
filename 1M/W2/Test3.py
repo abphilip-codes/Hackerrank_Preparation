@@ -1,7 +1,5 @@
 # Mock Test III
 
-# https://www.hackerrank.com/challenges/anagram/problem
-
 #!/bin/python3
 
 import math
