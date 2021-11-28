@@ -44,9 +44,10 @@ self.info (the value of the node)
 """
 
 def postOrder(root):
-    if root.left: postOrder(root.left)
-    if root.right: postOrder(root.right)
-    print(root.info, end=' ')
+    if(root):
+        postOrder(root.left)
+        postOrder(root.right)
+        print(root.info, end=' ')
 
 tree = BinarySearchTree()
 t = int(input())
