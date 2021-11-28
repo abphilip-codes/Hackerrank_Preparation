@@ -44,11 +44,10 @@ self.info (the value of the node)
 """
 
 def preOrder(root):
-    n = root
-    if n is None: return
-    print(n.info, end=' ')
-    preOrder(n.left)
-    preOrder(n.right)
+    if(root):
+        print(root.info, end=' ')
+        preOrder(root.left)
+        preOrder(root.right)
 
 tree = BinarySearchTree()
 t = int(input())
