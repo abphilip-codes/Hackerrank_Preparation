@@ -42,8 +42,7 @@ class BinarySearchTree:
             self.info = info  
             self.left = None  
             self.right = None 
-        // this is a node of the tree, 
-        // which contains info as data, left, right
+        // this is a node of the tree , which contains info as data, left , right
 '''
 
 def height(root):
