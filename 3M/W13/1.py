@@ -17,9 +17,10 @@ import bisect
 #
 
 def runningMedian(a):
-    b,c = [],[]
-    for z,l in enumerate(a,1):
-        bisect.insort(b,z)
+    b,c,l = [],[],0
+    for z in range(len(a)):
+        l+=1
+        bisect.insort(b,a[z])
         if(l%2==1): c.append(b[l//2])
         else: c.append((b[l//2]+b[l//2-1])/2)
     return c
